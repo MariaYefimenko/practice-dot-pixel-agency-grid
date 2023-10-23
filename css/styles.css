@@ -41,30 +41,167 @@ select {
 
 html,
 body {
-  height: 100%;
+  height: 1vh;
+  width: 100%
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+  font-size: 16px;
+  color: #18333E;
+
 }
 
-.wrapper {
+.conrainer {
+  max-width: 1356px;
+  margin: 0 auto;
+  padding: 15px;
   display: grid;
+  justify-content: center;
   /* grid-template-columns: 165px 712px 370px;
   grid-template-rows: 64px 539px 201px 119px; */
-  grid-template-columns: 1fr 3fr 2fr;
-  column-gap: 15px;
-  row-gap: 15px;
+  gap: 15px;
   background-color: #F2F8FD;
 }
 
 header {
   display: grid;
+  grid-template-columns: 165px 712px 370px;
+  gap: 25px;
 }
 
-.navigation-bar {
-  grid-column: 1 / 4;
+.navigation-logo {
+  grid-column: 1 / 2;
   grid-row: 1;
-  background-color: bisque;
+  display: flex;
+  align-content: center;
+  
+ 
+  /* border: 1px dotted  black; */
 }
 
-.search-area {
+.navigation-search-area {
   grid-column: 2 / 3;
   grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  
+
+  /* border: 1px dotted black; */
+}
+
+.navigation-input {
+  width: 634px;
+  height: 53px;
+  padding: 14px 55px;
+  background-color: #E9F1FA;
+  border-radius: 26.5px;
+  outline: transparent;
+  border-style: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .navigation-input:hover+.navigation-input-icon,
+  .navigation-input:focus+.navigation-input-icon {
+    fill: #F9D44A;
+  }
+  
+.navigation-input-icon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.navigation-button {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  border: none;
+  background-color: #18333E;
+  fill: #FFFFFF;
+  position: relative;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.navigation-button:hover,
+.navigation-button:active {
+  background-color: #F9D44A;
+  fill: #18333E;
+}
+
+.navigation-button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-profile-area {
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border: 1px dotted black; */
+}
+
+.header-location-notification {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.location-logo {
+  background-color: transparent;
+  fill: #B4BCC4;
+}
+
+.city-name {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  font-size: 16px;
+  color: #18333E;
+  margin-right: 58px;
+}
+
+.notification-button {
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  padding: 14px;
+  background-color: transparent;
+  border: 1px solid #B4BCC4;
+  cursor: pointer;
+  fill: #18333E;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.notification-button::after {
+  content: url(../images/notifications-mark.png);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: 45px;
+}
+
+.notification-button-icon {
+  background-color: transparent;
+}
+
+.notification-button:focus,
+.notification-button:hover {
+  border-color: #18333E;
+  fill: #F9D44A;
+}
+
+.profile-button {
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  align-items: baseline;
 }

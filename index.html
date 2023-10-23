@@ -4,33 +4,56 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITLE</title>
-
-
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet">
-
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" rel="stylesheet"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>HIKING CLUB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="conrainer">
       <header>
-        <div class="navigation-bar">
+        <div class="navigation-logo">
           <img src="./images/logo.png" alt="company logo" width="61" height="62">
-          <div class="search-area">
-
-          </div>
-
-
         </div>
-      </header>
+        <div class="navigation-search-area">
+          <input class="navigation-input" type="search" id="nav-search" name="nav-search"
+            placeholder="Search for places" />
+          <svg class="navigation-input-icon" width="24" height="24">
+            <use href="./images/defs.svg#icon-search-normal"></use>
+          </svg>
+          <button class="navigation-button" type="button">
+            <svg class="navigation-button-icon" width="24" height="24">
+              <use href="./images/defs.svg#icon-setting-4"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="navigation-profile-area">
+          <span class="vertical-line">
+            <img src="./images/vertical-ruler.png" alt="vertical-line">
+          </span>
+          <div class="header-location-notification">
+            <svg class="location-logo" width="24" height="24">
+              <use href="./images/defs.svg#icon-location"></use>
+            </svg>
+            <p class="city-name">New York/ Dc</p>
+            <button class="notification-button" type="button">
+              <svg class="notification-button-icon" width="22" height="22">
+                <use href="./images/defs.svg#icon-notification-bing"></use>
+              </svg>
+            </button>
+          </div>
+          <button class="profile-button">
+            <img src="./images/Avatar.png" alt="profile-picture" width="53" height="53">
+          </button>
+        </div>
+    </div>
+    </header>
+
     </div>
   </body>
 
