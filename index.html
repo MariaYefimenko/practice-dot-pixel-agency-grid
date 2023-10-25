@@ -16,44 +16,182 @@
 
   <body>
     <div class="conrainer">
-      <header>
-        <div class="navigation-logo">
-          <img src="./images/logo.png" alt="company logo" width="61" height="62">
-        </div>
-        <div class="navigation-search-area">
-          <input class="navigation-input" type="search" id="nav-search" name="nav-search"
-            placeholder="Search for places" />
-          <svg class="navigation-input-icon" width="24" height="24">
-            <use href="./images/defs.svg#icon-search-normal"></use>
+      <!-- <header> -->
+      <div class="header-logo">
+        <img src="./images/logo.png" alt="company logo" width="61" height="62">
+      </div>
+      <div class="header-search-area">
+        <input class="header-input" type="search" id="header-search" name="header-search"
+          placeholder="Search for places" />
+        <svg class="header-input-icon" width="24" height="24">
+          <use href="./images/defs.svg#icon-search-normal"></use>
+        </svg>
+        <button class="header-button" type="button">
+          <svg class="header-button-icon" width="24" height="24">
+            <use href="./images/defs.svg#icon-setting-4"></use>
           </svg>
-          <button class="navigation-button" type="button">
-            <svg class="navigation-button-icon" width="24" height="24">
-              <use href="./images/defs.svg#icon-setting-4"></use>
+        </button>
+      </div>
+      <div class="header-profile-area">
+        <span class="vertical-line">
+          <img src="./images/vertical-ruler.png" alt="vertical-line">
+        </span>
+        <div class="header-location-notification">
+          <svg class="location-logo" width="24" height="24">
+            <use href="./images/defs.svg#icon-location"></use>
+          </svg>
+          <p class="city-name">New York/ Dc</p>
+          <button class="notification-button" type="button">
+            <svg class="notification-button-icon" width="22" height="22">
+              <use href="./images/defs.svg#icon-notification-bing"></use>
             </svg>
           </button>
         </div>
-        <div class="navigation-profile-area">
-          <span class="vertical-line">
-            <img src="./images/vertical-ruler.png" alt="vertical-line">
-          </span>
-          <div class="header-location-notification">
-            <svg class="location-logo" width="24" height="24">
-              <use href="./images/defs.svg#icon-location"></use>
-            </svg>
-            <p class="city-name">New York/ Dc</p>
-            <button class="notification-button" type="button">
-              <svg class="notification-button-icon" width="22" height="22">
-                <use href="./images/defs.svg#icon-notification-bing"></use>
-              </svg>
-            </button>
-          </div>
-          <button class="profile-button">
-            <img src="./images/Avatar.png" alt="profile-picture" width="53" height="53">
-          </button>
-        </div>
-    </div>
-    </header>
+        <button class="profile-button">
+          <img src="./images/Avatar.png" alt="profile-picture" width="53" height="53">
+        </button>
+      </div>
 
+      </header>
+
+      <!----------SIDEBAR------------>
+
+      <nav>
+        <div class="sidebar">
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <svg class="sidebar-item-icon" width="19" height="19">
+                  <use href="./images/defs.svg#icon-Home-icon"></use>
+                </svg>
+                Dashboard
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <svg class="sidebar-item-icon" width="19" height="19">
+                  <use href="./images/defs.svg#icon-note-2"></use>
+                </svg>
+                Notes
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <svg class="sidebar-item-icon" width="19" height="19">
+                  <use href="./images/defs.svg#icon-moon"></use>
+                </svg>
+                Theme
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <svg class="sidebar-item-icon" width="19" height="19">
+                  <use href="./images/defs.svg#icon-profile-2user"></use>
+                </svg>
+                Account
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <svg class="sidebar-item-icon" width="19" height="19">
+                  <use href="./images/defs.svg#icon-microscope"></use>
+                </svg>
+                Explore
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <svg class="sidebar-item-icon" width="19" height="19">
+                  <use href="./images/defs.svg#icon-graph"></use>
+                </svg>
+                Graph
+              </a>
+            </li>
+        </div>
+      </nav>
+
+      <!------------------HERO----------------------->
+      <section class="hero">
+        <div class="hero-section-wrapper">
+          <h1 class="hero-title">Discover World</h1>
+          <div class="hero-recomended-list-container">
+            <ul class="hero-recomended-list">
+              <li class="hero-recomended-item">
+                <a class="hero-recomended-link" href="#">Recommended</a>
+              </li>
+              <li class="hero-recomended-item">
+                <a class="hero-recomended-link" href="#">Popular Places</a>
+              </li>
+              <li class="hero-recomended-item">
+                <a class="hero-recomended-link" href="#">Trip’s</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-picture-wrapper">
+            <ul class="hero-picture-list">
+              <li class="hero-picture-item">
+                <img class="hero-picture-unit" src="./images/img-1.png" alt="moon" width="240" height="305">
+                <button class="heart-button" type="button">
+                  <svg class="heart-button-icon" width="24" height="24">
+                    <use href="./images/defs.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <h3 class="underpicture-text">Moonlight Night</h3>
+                <div class="underpicture-location-wrapper">
+                  <svg class="underpicture-location-icon" width="19" height="19">
+                    <use href="./images/defs.svg#icon-location"></use>
+                  </svg>
+                  <p class="underpicture-location-text">Canada</p>
+                  <svg class="underpicture-location-icon-star" width="19" height="19">
+                    <use href="./images/defs.svg#icon-star"></use>
+                  </svg>
+                  <p class="underpicture-location-points">4.7</p>
+                </div>
+              </li>
+              <li class="hero-picture-item">
+                <img class="hero-picture-unit" src="./images/img-2.png" alt="moon" width="240" height="305">
+                <button class="heart-button" type="button">
+                  <svg class="heart-button-icon" width="24" height="24">
+                    <use href="./images/defs.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <h3 class="underpicture-text">Sahara Desert</h3>
+                <div class="underpicture-location-wrapper">
+                  <svg class="underpicture-location-icon" width="19" height="19">
+                    <use href="./images/defs.svg#icon-location"></use>
+                  </svg>
+                  <p class="underpicture-location-text">Africa</p>
+                  <svg class="underpicture-location-icon-star" width="19" height="19">
+                    <use href="./images/defs.svg#icon-star"></use>
+                  </svg>
+                  <p class="underpicture-location-points">4.9</p>
+                </div>
+              </li>
+              <li class="hero-picture-item">
+                <img class="hero-picture-unit" src="./images/img-3.png" alt="moon" width="240" height="305">
+                <button class="heart-button" type="button">
+                  <svg class="heart-button-icon" width="24" height="24">
+                    <use href="./images/defs.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <h3 class="underpicture-text">Night Camping</h3>
+                <div class="underpicture-location-wrapper">
+                  <svg class="underpicture-location-icon" width="19" height="19">
+                    <use href="./images/defs.svg#icon-location"></use>
+                  </svg>
+                  <p class="underpicture-location-text">New York</p>
+                  <svg class="underpicture-location-icon-star" width="19" height="19">
+                    <use href="./images/defs.svg#icon-star"></use>
+                  </svg>
+                  <p class="underpicture-location-points">5.0</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        .
+
+    </div>
     </div>
   </body>
 
